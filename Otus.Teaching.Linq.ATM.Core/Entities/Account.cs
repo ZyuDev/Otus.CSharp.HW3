@@ -8,5 +8,10 @@ namespace Otus.Teaching.Linq.ATM.Core.Entities
         public DateTime OpeningDate { get; set; }
         public decimal CashAll { get; set; }
         public int UserId { get; set; }
+
+        public override string ToString()
+        {
+            return $"Account: {1}, User: {UserId}, Saldo: {CashAll}";
+        }
     }
 }
